@@ -6,10 +6,11 @@ foreach ($this->data['resources'] as $key => $data) {
     ?>
     <strong>
         <?=$key?>.
-        <?=$data['url']?>
+        URL: <?=$data['url']?>
     </strong>
     <br>
-    Metoda: <?=$data['method']?><br>
-    <?= $data['description']?> <br> <br>
-
+    Method: <?=$data['method']?>
+    <br>
+    Description: <?= $data['description']?> <br>
+    <br>
 <?php } ?>

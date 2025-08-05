@@ -11,6 +11,6 @@ abstract class AbstractPage{
     public function show(){
         $template = $this->templateName;
         $data = $this->data;
-        include_once('System/View/' . $template . '.tpl.php');
+        include_once(SYSTEM . 'View/' . $template . '.tpl.php');
     }
 }

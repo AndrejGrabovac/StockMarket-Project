@@ -50,6 +50,10 @@ class MySQLiDatabase{
     function fetchArray($result){
         return $result->fetch_array();
     }
+
+    function escapeString($string) {
+        return $this->MySQLi->escape_string($string);
+    }
 }
 
 
